@@ -23,10 +23,10 @@ jobs:
 
       - name: 使用PyInstaller打包
         run: |
-          pyinstaller --onefile 退税系统.py
+          pyinstaller --onefile tax_refund_gui.py
 
       - name: 上传生成的EXE文件
         uses: actions/upload-artifact@v4
         with:
           name: 退税系统-EXE
-          path: dist/退税系统.exe
+          path: dist/tax_refund_gui.exe
